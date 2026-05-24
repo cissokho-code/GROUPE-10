@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* les couleurs 
+menu:#111827
+main:#9CA3AF 
+footer:#6B7280*/
+body {
+    /* background-color: #111827; */
+    font-family: serif;
+}
+
+header {
+    padding: 10px;
+    background-color: #f7df1e;
+}
+
+.logo {
+    font-size: 18px;
+    float: left;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #3776AB;
+    padding: 50px;
+}
+
+/* la section hero */
+.hero {
+    background-image: url('images/html-css-collage-concept.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titre-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titre-hero h1 {
+    font-size: 40px;
+    color: white;
+    padding: 20px;
+}
+
+.titre-hero button {
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+
+}
+
+/* la section categories */
+.categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+.categories-carte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.categories-carte img {
+    width: 100px;
+    height: auto;
+}
+
+.carte {
+    width: 350px;
+    height: 300px;
+    border: 1px solid black;
+    padding: 100px;
+    margin: 0 20px;
+    box-shadow: 2px 4px 10px black;
+    transition: 3s;
+}
+
+.carte:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.carte h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.carte p {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* lq section cours */
+.cours {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.conteneur-cours {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.conteneur-cours img {
+    width: 100px;
+     height: auto;
+}
+
+.carte-cours-html-css {
+    width: 600px;
+    height: 300px;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(78, 65, 65,0.6);
+}
+
+
+.carte-cours-js {
+    width: 600px;
+        height: 300px;
+        padding: 100px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(78, 65, 65, 0.6);
+}
+
+.carte-cours-python {
+    width: 600px;
+        height: 300px;
+        padding: 100px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(78, 65, 65, 0.6);
+}
+
+.carte-cours-sql {
+    width: 600px;
+        height: 300px;
+        padding: 100px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(78, 65, 65, 0.6);
+}
+
+footer {
+    padding: 300px;
+}
