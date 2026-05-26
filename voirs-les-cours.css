@@ -23,13 +23,15 @@ iframe {
     border: 1px solid rgb(195, 195, 212);
     border-radius: 15px;
 }
-.titre-cours-voir{
+
+.titre-cours-voir {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 30px 0;
 }
-.titre-cours-voir h2{
+
+.titre-cours-voir h2 {
     font-size: 35px;
     color: black;
 }
