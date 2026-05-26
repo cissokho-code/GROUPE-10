@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* les css des tout les icons */
 li a {
     display: flex;
@@ -24,7 +25,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 0;
     background-color: #111827;
 }
 
@@ -72,9 +73,11 @@ ul li a:hover {
 
 /* la section hero */
 .hero {
-    background-image: url('images/html-css-collage-concept.jpg');
-    background-image: url('images/');
-    background-color: #111827;
+    /* background-image: url('images/html-css-collage-concept.jpg');
+    background-image: url('images/h1.jpg');
+    background-image: url('images/h3.jpg'); */
+    background-image: url('images/h2.jpg');
+    /* background-color: #111827; */
     background-size: cover;
     background-repeat: no-repeat;
     padding: 50px;
@@ -93,8 +96,9 @@ ul li a:hover {
 
 .titre-hero h1 {
     font-size: 40px;
-    color: #ffffff;
+    color: #111827;
     padding: 20px;
+    text-transform: capitalize;
 }
 
 .titre-hero button {
@@ -117,6 +121,9 @@ ul li a:hover {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: #ffffff;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .titre-categories h2 {
@@ -132,7 +139,6 @@ ul li a:hover {
     align-items: center;
     margin: 50px 20px;
     background-color: #fffad4;
-    box-shadow: 1px 1px 10px #081f50;
 }
 
 .categories-carte {
@@ -183,6 +189,8 @@ ul li a:hover {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    background-color: #ffffff;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .titre-cours h2 {
@@ -207,7 +215,6 @@ ul li a:hover {
     height: 250px;
     padding: 20px;
     margin: 20px;
-    transition: 0.5s;
     border-radius: 10px;
     flex-direction: column;
 }
@@ -229,13 +236,14 @@ ul li a:hover {
     flex-direction: column;
 }
 
-.conteneur-cours button {
+.conteneur-cours button,a {
     padding: 10px;
     margin-top: 10px;
     border: none;
     border-radius: 10px;
     background-color: #111827;
     color: #f7df1e;
+    text-decoration: none;
 }
 
 .conteneur-cours h3,
@@ -309,6 +317,7 @@ span {
     background-color: #081f50;
     color: #f7df1e;
 }
+
 /* la partie contact  */
 .contact {
     display: flex;
@@ -344,30 +353,33 @@ input {
     border: 1px solid #322f2f;
     border-radius: 10px;
 }
-.submit{
+
+.submit {
     background-color: #111827;
-        color: #f7df1e;
-        width: 200px;
+    color: #f7df1e;
+    width: 200px;
 }
 
-/* la formulaire de pour se conectez */
+/* la partie formulaire de pour se conectez */
 .formulaire {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 100vh;
+    height: 76vh;
     background-color: #032369;
 }
 
 .formulaire form {
     background-color: #feffff;
     border-radius: 10px;
+
 }
 
 .formulaire h2 {
     color: #feffff;
+    text-transform: capitalize;
 }
 
 .formulaire input {
@@ -379,6 +391,64 @@ input {
     color: #f7df1e;
     width: 200px;
 }
+
+/*  la section de l'equipe */
+.equipe {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+   
+}
+.titre-equipe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #feffff;
+    box-shadow: 1px 1px 4px black;
+}
+
+.contenu-equipe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.carte-equipe {
+    margin: 30px 40px;
+    width: 300px;
+    border: none;
+    box-shadow: 1px 1px 4px black;
+    border-radius: 10px;
+    height: 200px;
+    transition: 0.1s;
+}
+.carte-equipe:hover{
+   transform: scale(1.1);
+}
+
+.carte-equipe img {
+    width: 90px;
+    padding: 10  px;
+    height: auto;
+    border-radius: 50%;
+}
+.carte-equipe h3{
+    text-transform: capitalize;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.carte-equipe p{
+    color: #111827;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 
 /* le footer */
 .footer {
