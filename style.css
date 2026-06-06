@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 /* les diffrents  les couleurs
 le coul principal: #111827 
 le 2éme #f7df1e ET le blanc*/
@@ -53,6 +54,7 @@ ul li a {
     text-decoration: none;
     color: #feffff;
     padding: 15px;
+    margin-left: 20px;
 }
 
 ul li a:hover {
@@ -70,6 +72,7 @@ ul li a:hover {
 #conexion:hover {
     background-color: #032369;
     color: #f7df1e;
+
 }
 
 /* la section hero */
@@ -121,18 +124,20 @@ ul li a:hover {
 
 /* titre-categories */
 .titre-categories {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+
+    margin: auto;
+    padding: 10px;
     margin-top: 20px;
-    background-color: #ffffff;
-    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #feffff;
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px black;
 }
 
 .titre-categories h2 {
     font-size: 25px;
     padding: 20px;
+    text-align: center;
     text-transform: capitalize;
 }
 
@@ -189,11 +194,13 @@ ul li a:hover {
 
 /* titre-cours */
 .titre-cours {
+    width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
     background-color: #ffffff;
+    border-radius: 8px;
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -225,7 +232,7 @@ ul li a:hover {
 }
 
 .conteneur-cours img {
-    width: 60px;
+    width: 50px;
     height: auto;
 }
 
@@ -339,6 +346,67 @@ span {
     color: #f7df1e;
 }
 
+/* la section de l'equipe */
+.equipe {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.titre-equipe {
+    margin: auto;
+    padding: 20px;
+    background-color: #feffff;
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px black;
+}
+
+.contenu-equipe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.carte-equipe {
+    margin: 30px 40px;
+    width: 270px;
+    border: none;
+    box-shadow: 1px 1px 4px black;
+    border-radius: 10px;
+    height: 200px;
+    transition: 0.1s;
+}
+
+.carte-equipe:hover {
+    transform: scale(1.1);
+}
+
+.carte-equipe img {
+    width: 60px;
+    padding: 10px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.carte-equipe h3 {
+    text-transform: capitalize;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+.carte-equipe p {
+    color: #111827;
+    font-weight: bold;
+    font-size: 16px;
+}
+
 /* la partie contact  */
 .contact {
     display: flex;
@@ -365,6 +433,7 @@ form {
 
 form h3 {
     margin-top: 20px;
+    text-transform: capitalize;
 }
 
 input {
@@ -385,6 +454,13 @@ input {
 .submit:hover {
     background-color: #f7df1e;
     color: #111827;
+}
+
+textarea {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 8px;
 }
 
 /* la partie formulaire de pour se conectez */
@@ -418,68 +494,6 @@ input {
     color: #f7df1e;
     width: 200px;
 }
-
-/*  la section de l'equipe */
-.equipe {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-
-}
-
-.titre-equipe {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    background-color: #feffff;
-    box-shadow: 1px 1px 4px black;
-}
-
-.contenu-equipe {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-.carte-equipe {
-    margin: 30px 40px;
-    width: 300px;
-    border: none;
-    box-shadow: 1px 1px 4px black;
-    border-radius: 10px;
-    height: 200px;
-    transition: 0.1s;
-}
-
-.carte-equipe:hover {
-    transform: scale(1.1);
-}
-
-.carte-equipe img {
-    width: 90px;
-    padding: 10 px;
-    height: auto;
-    border-radius: 50%;
-}
-
-.carte-equipe h3 {
-    text-transform: capitalize;
-    padding: 10px;
-    font-weight: bold;
-    font-size: 20px;
-
-}
-
-.carte-equipe p {
-    color: #111827;
-    font-weight: bold;
-    font-size: 20px;
-}
-
 
 /* le footer */
 .footer {
@@ -637,7 +651,8 @@ input {
         height: auto;
     }
 
-    input {
+    input,
+    textarea {
         width: 90%;
     }
 
