@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .carte-voir-les-c,
@@ -12,26 +13,48 @@
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+
+
+}
+
+.carte-html-css,
+.carte-js,
+.carte-python,
+.carte-sql {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    border: 1px solid;
+    border-radius: 10px;
     background-color: #111827;
-    background-color: #d1d5db;
+    box-shadow: 1px 1px 3px black;
 }
 
 iframe {
     margin: 10px 20px;
-    width: 400px;
+    width: 300px;
     height: 200px;
     border: 1px solid rgb(195, 195, 212);
     border-radius: 15px;
 }
 
 .titre-cours-voir {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px 0;
+    margin: auto;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #111827;
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px black;
 }
 
 .titre-cours-voir h2 {
-    font-size: 35px;
-    color: black;
+    font-size: 30px;
+    color: #feffff;
+    text-align: center;
 }
