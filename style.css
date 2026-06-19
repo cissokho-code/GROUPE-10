@@ -471,12 +471,14 @@ textarea {
     flex-wrap: wrap;
     flex-direction: column;
     height: 76vh;
-    background-color: #032369;
+    /* background-color: #032369; */
+    background-image: url('images/h1.jpg');
 }
 
 .formulaire form {
     background-color: #feffff;
     border-radius: 10px;
+    width: 80%;
 
 }
 
@@ -492,6 +494,11 @@ textarea {
 .formulaire input[type="submit"] {
     background-color: #111827;
     color: #f7df1e;
+    width: 200px;
+}
+.formulaire input[type="submit"]:hover {
+  background-color: #f7df1e;
+    color: #000000;
     width: 200px;
 }
 
