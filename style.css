@@ -81,7 +81,6 @@ ul li a:hover {
     background-image: url('images/h1.jpg');
     background-image: url('images/h3.jpg'); */
     background-image: url('images/h2.jpg');
-    /* background-color: #111827; */
     background-size: cover;
     background-repeat: no-repeat;
     padding: 50px;
@@ -375,10 +374,13 @@ span {
 .carte-equipe {
     margin: 30px 40px;
     width: 270px;
+    padding: 50px;
+    background-color: #111827;
     border: none;
     box-shadow: 1px 1px 4px black;
     border-radius: 10px;
-    height: 200px;
+    /* height: 200px; */
+    height: auto;
     transition: 0.1s;
 }
 
@@ -387,22 +389,30 @@ span {
 }
 
 .carte-equipe img {
-    width: 60px;
-    padding: 10px;
+    width: 80px;
+    padding: 5px;
     height: auto;
-    border-radius: 50%;
+    border-radius: 30%;
 }
-
+.carte-equipe h2{
+    text-transform: capitalize;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 18px;
+        color: #d1d5db;
+}
 .carte-equipe h3 {
     text-transform: capitalize;
     padding: 10px;
     font-weight: bold;
     font-size: 18px;
+    color: #d1d5db;
 
 }
 
 .carte-equipe p {
     color: #111827;
+    color: #d1d5db;
     font-weight: bold;
     font-size: 16px;
 }
